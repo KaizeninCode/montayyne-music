@@ -31,7 +31,7 @@ const Header = () => {
         
     ]
   return (
-    <header className='font-comfortaa flex justify-between items-center w-full py-4 mx-8 fixed z-10 bg-transparent text-white'>
+    <header className='font-comfortaa flex justify-between items-center w-full py-4 px-4 fixed z-10 bg-transparent text-white'>
       <div className="ml-2">
         <h2 className="lg:text-2xl text-md md:text-xl font-bold">Montayyne Music</h2>
       </div>
@@ -40,7 +40,7 @@ const Header = () => {
             <a href={link.url} key={link.url} className="mr-10">{link.name}</a>
         ))}
       </div>
-      <div className="lg:hidden mr-10">
+      <div className="lg:hidden">
       <Menu colorScheme="red">
         <MenuButton
           as={IconButton}
