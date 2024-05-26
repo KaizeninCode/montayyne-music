@@ -8,7 +8,11 @@ export default {
     extend: {
       fontFamily: {
         comfortaa: ['Comfortaa', 'sans-serif'],
-        nunito: ['Nunito', 'sans-serif']
+        nunito: ['Nunito', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif']
+      },
+      backgroundImage: {
+        video: 'url("/video.mp4")'
       }
     },
   },

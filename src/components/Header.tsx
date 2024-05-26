@@ -1,4 +1,8 @@
-import Toggle from "./Toggle";
+
+// interface HeaderProps {
+//   handleThemeToggle: Function,
+//   isChecked: Boolean
+// }
 
 const Header = () => {
     const navlinks = [
@@ -11,8 +15,8 @@ const Header = () => {
             url: '#about',
         },
         {
-            name: 'Portfolio',
-            url: '#portfolio',
+            name: 'Services',
+            url: '#services',
         },
         {
             name: 'Contact',
@@ -21,18 +25,16 @@ const Header = () => {
         
     ]
   return (
-    <header className='font-comfortaa flex justify-between items-center w-full p-4 fixed'>
+    <header className='font-comfortaa flex justify-between items-center w-full py-4 mx-8 fixed z-10 bg-transparent text-white'>
       <div>
         <h2 className="text-2xl font-bold">Montayyne Music</h2>
       </div>
       <div>
         {navlinks.map(link => (
-            <a href={link.url} key={link.url} className="mr-10 hover:bg-black hover:text-red-200 p-2 transition ease-in-out delay-100 rounded-md">{link.name}</a>
+            <a href={link.url} key={link.url} className="mr-10">{link.name}</a>
         ))}
       </div>
-      <div className="flex items-center">
-        <Toggle/>
-      </div>
+      
     </header>
   )
 }
