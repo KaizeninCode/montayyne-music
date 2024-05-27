@@ -1,7 +1,7 @@
 
 const Services = () => {
   return (
-    <div className="section bg-orange-500">
+    <div className="section bg-yellow-500">
       
     </div>
   )

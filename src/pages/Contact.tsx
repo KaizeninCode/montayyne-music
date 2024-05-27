@@ -1,7 +1,7 @@
 
 const Contact = () => {
   return (
-    <div className="section bg-lime-800">
+    <div className="section bg-blue-500">
     </div>
   )
 }

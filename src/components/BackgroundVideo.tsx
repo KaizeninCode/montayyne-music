@@ -18,15 +18,17 @@ const BackgroundVideo = () => {
               We're here to help you bring your next music project to life.
             </p>
             <div className='mt-10 mx-6 max-lg:mx-auto'>
-              <Button 
-                // variant={'outline'} 
-                colorScheme='blackAlpha'
-                fontFamily={'Comfortaa'} 
-                color={'white'}
-                _hover={{ bg: 'white', color: 'black' }}
-              >
-                Find out how
-              </Button>
+              <a href="#intro">
+                <Button
+                  // variant={'outline'}
+                  colorScheme='blackAlpha'
+                  fontFamily={'Comfortaa'}
+                  color={'white'}
+                  _hover={{ bg: 'white', color: 'black' }}
+                >
+                  Find out how
+                </Button>
+              </a>
             </div>
           </div>
         </div>
