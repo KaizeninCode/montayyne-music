@@ -3,7 +3,7 @@ import Header from "../components/Header"
 
 const Home = () => {
   return (
-    <section className="section" id="home">
+    <section className="section">
       <Header/>
       <BackgroundVideo/>
     </section>

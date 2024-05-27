@@ -3,7 +3,7 @@
 //   handleThemeToggle: Function,
 //   isChecked: Boolean
 // }
-import { IconButton, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
+import { IconButton, Link, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoHomeOutline } from "react-icons/io5";
 import { IoBookOutline } from "react-icons/io5";
@@ -14,19 +14,23 @@ const Header = () => {
     const navlinks = [
         {
             name: 'Home',
-            url: '#home',
+            url: '/',
+            icon: <IoHomeOutline />
         },
         {
             name: 'About',
-            url: '#about',
+            url: '/about',
+            icon: <IoBookOutline />
         },
         {
             name: 'Services',
-            url: '#services',
+            url: '/services',
+            icon: <FaMusic />
         },
         {
             name: 'Contact',
-            url: '#contact',
+            url: '/contact',
+            icon: <RiContactsLine />
         },
         
     ]
@@ -46,22 +50,17 @@ const Header = () => {
           as={IconButton}
           aria-label='Options'
           icon={<RxHamburgerMenu color="white"/>}
-          variant='outline'
+          variant='ghost'
           colorScheme="red.200"
         />
         <MenuList color={'#010101'}>
-          <MenuItem icon={<IoHomeOutline />} >
-            Home
-          </MenuItem>
-          <MenuItem icon={<IoBookOutline />}>
-            About
-          </MenuItem>
-          <MenuItem icon={<FaMusic />}>
-            Services
-          </MenuItem>
-          <MenuItem icon={<RiContactsLine />}>
-            Contact
-          </MenuItem>
+          {navlinks.map(link => (
+              <MenuItem key={link.url}>
+                <Link href={link.url} className="flex items-center">
+                  {link.icon}&nbsp;&nbsp;{link.name}
+                </Link>
+              </MenuItem>
+          ))}
         </MenuList>
       </Menu>
       </div>

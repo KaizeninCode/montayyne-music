@@ -14,7 +14,7 @@ const BackgroundVideo = () => {
             <h1 className="text-white font-nunito font-bold lg:text-7xl text-5xl mx-6 mt-20">
               Helping create timeless music.
             </h1>
-            <p className="font-poppins ml-10 mt-5 text-white text-lg lg:text-3xl">
+            <p className="font-poppins mx-6 mt-5 text-white text-lg lg:text-3xl">
               We're here to help you bring your next music project to life.
             </p>
             <div className='mt-10 mx-6 max-lg:mx-auto'>
@@ -23,7 +23,7 @@ const BackgroundVideo = () => {
                 colorScheme='blackAlpha'
                 fontFamily={'Comfortaa'} 
                 color={'white'}
-                _hover={{ bg: '#000', color: 'red.200' }}
+                _hover={{ bg: 'white', color: 'black' }}
               >
                 Find out how
               </Button>
