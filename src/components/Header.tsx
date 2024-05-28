@@ -41,7 +41,7 @@ const Header = () => {
       </div>
       <div className="max-lg:hidden">
         {navlinks.map(link => (
-            <a href={link.url} key={link.url} className="mr-10">{link.name}</a>
+            <a href={link.url} key={link.url} className="mr-10 uppercase">{link.name}</a>
         ))}
       </div>
       <div className="lg:hidden">
