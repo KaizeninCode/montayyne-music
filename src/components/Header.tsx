@@ -3,14 +3,16 @@
 //   handleThemeToggle: Function,
 //   isChecked: Boolean
 // }
-import { IconButton, Link, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
+import { IconButton, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoHomeOutline } from "react-icons/io5";
 import { IoBookOutline } from "react-icons/io5";
 import { FaMusic } from "react-icons/fa6";
 import { RiContactsLine } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+    const navigate = useNavigate()
     const navlinks = [
         {
             name: 'Home',
@@ -39,9 +41,9 @@ const Header = () => {
       <div className="ml-2">
         <h2 className="lg:text-2xl text-md md:text-xl font-bold">Montayyne Music</h2>
       </div>
-      <div className="max-lg:hidden">
+      <div className="max-lg:hidden flex cursor-pointer">
         {navlinks.map(link => (
-            <a href={link.url} key={link.url} className="mr-10 uppercase">{link.name}</a>
+            <p onClick={()=>navigate(`${link.url}`)} key={link.url} className="mr-10 uppercase">{link.name}</p>
         ))}
       </div>
       <div className="lg:hidden">
@@ -56,9 +58,9 @@ const Header = () => {
         <MenuList color={'#010101'}>
           {navlinks.map(link => (
               <MenuItem key={link.url}>
-                <Link href={link.url} className="flex items-center">
+                <p onClick={() => navigate(`${link.url}`)} className="flex items-center">
                   {link.icon}&nbsp;&nbsp;{link.name}
-                </Link>
+                </p>
               </MenuItem>
           ))}
         </MenuList>
