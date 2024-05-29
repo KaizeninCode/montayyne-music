@@ -3,6 +3,7 @@ import { CiSpeaker } from "react-icons/ci";
 import { IoMdMicrophone } from "react-icons/io";
 import { RiDiscLine } from "react-icons/ri";
 import ServiceCarousel from "../components/ServiceCarousel";
+import RateCard from "../components/RateCard";
 
 export const services = [
   {
@@ -31,6 +32,7 @@ const Services = () => {
   return (
     <div className="section bg-purple-700">
       <ServiceCarousel/>
+      <RateCard/>
     </div>
   )
 }
