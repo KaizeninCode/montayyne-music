@@ -1,5 +1,17 @@
 {
-    "rewrites": [
-        {"source": "/(.*)", "destination": "/index.html"}
+    "version": 2,
+    "name": "montayyne-music",
+    "builds": [
+      {
+        "src": "client/package.json",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/client/index.html"
+      }
     ]
-}
+  }
+  
