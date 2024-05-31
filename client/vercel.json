@@ -1,10 +1,12 @@
 {
     "version": 2,
-    "name": "montayyne-music",
     "builds": [
       {
         "src": "client/package.json",
-        "use": "@vercel/node"
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "client/dist"
+        }
       }
     ],
     "routes": [
