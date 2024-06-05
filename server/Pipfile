@@ -12,6 +12,9 @@ flask-oauthlib = "*"
 flask-uploads = "*"
 flask-mail = "*"
 flask-analytics = "*"
+flask-restful = "*"
+sqlalchemy-serializer = "*"
+flask-cors = "*"
 
 [dev-packages]
 
