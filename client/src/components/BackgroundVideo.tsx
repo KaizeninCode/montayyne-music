@@ -20,7 +20,7 @@ const BackgroundVideo = () => {
             <div className='mt-10 mx-6 max-lg:mx-auto'>
               <a href="#intro">
                 <Button
-                  // variant={'outline'}
+                  variant={'outline'}
                   colorScheme='blackAlpha'
                   fontFamily={'Comfortaa'}
                   color={'white'}

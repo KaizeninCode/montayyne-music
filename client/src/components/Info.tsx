@@ -3,8 +3,8 @@ import { Button } from "@chakra-ui/react"
 const Info = () => {
   return (
     <section className="section bg-red-500 overflow-hidden">
-      <div className="w-full h-screen flex max-md:flex-col items-center justify-center">
-        <div className="flex flex-col justify-around mx-6 md:w-1/2">
+      <div className="min-h-screen grid grid-cols-2 gap-8">
+        <div className="flex flex-col justify-center mx-6">
             <p className="lg:text-2xl text-md text-white font-nunito mb-4 mt-4">
               Montayyne is a capable music producer with more than 5 years of experience making music. All genres, you name it.
             </p>
@@ -22,9 +22,8 @@ const Info = () => {
               </Button>
             </a>
         </div>
-        <div className="w-1/2 h-fit max-lg:hidden">
-            <img src="/Blogging-bro.png" alt="Pick me bro"/>
-        </div>
+        <div className="max-lg:hidden bg-about bg-cover bg-center bg-no-repeat"/>
+            {/* <img src="/Blogging-bro.png" alt="Pick me bro"/> */}
       </div>
     </section>
   )

@@ -12,7 +12,9 @@ export default {
         poppins: ['Poppins', 'sans-serif']
       },
       backgroundImage: {
-        video: 'url("/video.mp4")'
+        video: 'url("/video.mp4")',
+        about: 'url("/Blogging-bro.png")',
+        services: 'url("/Boombox-amico.png")',
       }
     },
   },
