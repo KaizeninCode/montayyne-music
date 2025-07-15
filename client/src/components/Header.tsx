@@ -37,7 +37,7 @@ const Header = () => {
         
     ]
   return (
-    <header className='font-comfortaa flex justify-between items-center w-full p-8 fixed z-10 bg-transparent text-white'>
+    <header className='font-comfortaa flex justify-between items-center w-full py-8 px-12 fixed z-10 bg-transparent text-white'>
       <div className="ml-2">
         <h2 className="lg:text-2xl text-md md:text-xl font-bold">Montayyne Music</h2>
       </div>

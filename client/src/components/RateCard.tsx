@@ -23,7 +23,7 @@ const RateCard = () => {
         },
     ]
   return (
-    <section className="section bg-purple-700">
+    <section className="section bg-purple-800">
         <div className="flex max-lg:flex-col items-center justify-center max-lg:pt-16">
             {licenses.map((license, index) => (
                 <div key={index} className="mb-4 lg:m-4 lg:mt-32 mt-2 lg:h-[400px] h-[100px] w-[300px] flex flex-col items-center justify-center shadow shadow-white rounded-md font-nunito text-white hover:bg-white hover:text-purple-700 cursor-pointer transition ">

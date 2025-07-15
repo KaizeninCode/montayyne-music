@@ -1,7 +1,7 @@
 
 const Contact = () => {
   return (
-    <section className="flex-1 pt-28 px-6 min-h-screen bg-blue-400">
+    <section className="flex-1 pt-28 px-6 min-h-screen bg-blue-900">
       <div className="grid lg:grid-cols-2 gap-8">
         <form action="post" className="lg:p-6 p-2 space-y-6">
           <h1 className="text-3xl font-bold text-center text-white font-poppins">Contact Us</h1>
@@ -33,7 +33,8 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="p-2 bg-white text-blue-500 rounded-lg mx-auto" 
+            className="p-2 bg-white text-blue-900 rounded-lg mx-auto"
+            onClick={()=>{}} 
           >
             Submit
           </button>

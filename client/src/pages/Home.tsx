@@ -4,7 +4,7 @@ import Intro from "../components/Intro"
 
 const Home = () => {
   return (
-    <section className="section">
+    <section>
       <Header/>
       <BackgroundVideo/>
       <Intro/>

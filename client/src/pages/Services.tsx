@@ -30,7 +30,7 @@ export const services = [
 
 const Services = () => {
   return (
-    <div className="section bg-purple-700">
+    <div className="section bg-purple-800">
       <ServiceCarousel/>
       <RateCard/>
     </div>

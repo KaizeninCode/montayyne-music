@@ -2,7 +2,7 @@ import { Button } from "@chakra-ui/react"
 
 const Info = () => {
   return (
-    <section className="section p-4 bg-red-500 overflow-hidden">
+    <section className="section p-4 bg-red-700 overflow-hidden">
       <div className="min-h-screen grid lg:grid-cols-2 gap-8">
         <div className="flex flex-col justify-center mx-6">
             <p className="lg:text-2xl text-md text-white font-nunito mb-4 mt-4">
@@ -16,7 +16,7 @@ const Info = () => {
                 variant={'outline'}
                 fontFamily={'Nunito'}
                 color={'white'}
-                _hover={{color: 'red.500', backgroundColor: 'white'}}
+                _hover={{color: 'red.700', backgroundColor: 'white'}}
               >
                 Check my portfolio out
               </Button>

@@ -9,7 +9,9 @@ export default {
       fontFamily: {
         comfortaa: ['Comfortaa', 'sans-serif'],
         nunito: ['Nunito', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif']
+        poppins: ['Poppins', 'sans-serif'],
+        serif: ['DM Serif Text', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
       backgroundImage: {
         video: 'url("/video.mp4")',
