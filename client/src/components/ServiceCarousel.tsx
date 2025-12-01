@@ -4,7 +4,7 @@ import { services } from "../pages/Services";
 const ServiceCarousel = () => {
 
   return (
-    <section className="flex items-center justify-center section p-4 max-md:overflow-y-scroll" id="section">
+    <section className="flex items-center justify-center section p-4 max-md:overflow-y-scroll">
       <div className="flex items-center justify-center py-4">
         <img src="/Boombox-amico.png" alt="broooo" width={400} className="mr-40 max-lg:hidden"/>
 
